@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Unlock my PDF</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2a2d3d;
+      --accent: #4f8ef7;
+      --accent-dim: rgba(79,142,247,.12);
+      --text: #e2e6f0;
+      --text-muted: #8891aa;
+      --text-dim: #c0c8dc;
+      --radius: 14px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 0 16px 80px;
+    }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .app-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-dim);
+      border: 1px solid rgba(79,142,247,.25);
+      border-radius: 999px;
+      padding: 4px 14px;
+      margin-bottom: 20px;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: clamp(26px, 5vw, 38px);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1.15;
+      color: #fff;
+    }
+
+    .meta {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    nav.doc-nav {
+      max-width: 760px;
+      margin: 24px auto 0;
+      display: flex;
+      gap: 10px;
+    }
+
+    nav.doc-nav a {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .15s, color .15s;
+    }
+
+    nav.doc-nav a.active {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    nav.doc-nav a:not(.active) {
+      background: var(--surface);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    nav.doc-nav a:not(.active):hover {
+      background: var(--border);
+      color: var(--text);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto 0;
+    }
+
+    section.card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 20px;
+    }
+
+    section.card h2 {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    section.card p {
+      color: var(--text-dim);
+      margin-bottom: 14px;
+    }
+
+    section.card p:last-child { margin-bottom: 0; }
+
+    section.card ul, section.card ol {
+      color: var(--text-dim);
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    section.card ul li, section.card ol li {
+      margin-bottom: 6px;
+    }
+
+    section.card a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(79,142,247,.3);
+    }
+
+    section.card a:hover { border-bottom-color: var(--accent); }
+
+    .highlight-box {
+      background: var(--accent-dim);
+      border: 1px solid rgba(79,142,247,.2);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+      color: var(--text-dim);
+    }
+
+    .highlight-box strong { color: var(--text); }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .tag {
+      background: var(--accent-dim);
+      border: 1px solid rgba(79,142,247,.2);
+      border-radius: 6px;
+      padding: 4px 12px;
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .right-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 14px;
+    }
+
+    .right-item strong {
+      display: block;
+      font-size: 13px;
+      color: var(--accent);
+      margin-bottom: 2px;
+    }
+
+    .right-item span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 40px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-tag">Unlock my PDF</div>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Pursuant to Arts. 13–14 EU Reg. 2016/679 (GDPR) &nbsp;·&nbsp; Last updated: April 2, 2026</p>
+
+  <nav class="doc-nav">
+    <a href="../privacy/" class="active">Privacy Policy</a>
+    <a href="../terms/">Terms of Service</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="card">
+    <h2>1. Data Controller</h2>
+    <div class="highlight-box">
+      <strong>Giulio Palumbo Schiavone</strong><br>
+      Email: <a href="mailto:giulio.palumboschiavone@gmail.com">giulio.palumboschiavone@gmail.com</a>
+    </div>
+    <p>The Data Controller is the individual who determines the purposes and means of processing your personal data within this application.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. What We Do NOT Collect</h2>
+    <p><strong>All PDF processing happens exclusively on your device (on-device).</strong> Your files remain under your control at all times.</p>
+    <p>The Data Controller does <strong>not</strong> collect, transmit, or store on any server:</p>
+    <ul>
+      <li>The content of the PDF files you process</li>
+      <li>The passwords you enter</li>
+      <li>Any data relating to the documents you open or export</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>3. Data Collected by Third Parties</h2>
+
+    <p><strong>A. Google AdMob</strong> (advertising — free version only)</p>
+    <p>The free version displays ads provided by Google LLC (2 Google Way, Mountain View, CA 94043, USA) via the Google Mobile Ads SDK. The SDK may collect:</p>
+    <div class="tag-list">
+      <span class="tag">IP address</span>
+      <span class="tag">Crash logs</span>
+      <span class="tag">App performance data</span>
+      <span class="tag">Advertising interactions</span>
+      <span class="tag">IDFA (with ATT consent)</span>
+    </div>
+    <p style="margin-top:14px"><strong>Legal basis:</strong> consent (Art. 6(1)(a) GDPR) for IDFA; legitimate interest (Art. 6(1)(f) GDPR) for minimal technical data.<br>
+    <strong>Transfer:</strong> Google LLC (USA) — covered by Standard Contractual Clauses.<br>
+    More info: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <p>You can withdraw ATT consent at any time: <em>Settings → Privacy &amp; Security → Tracking → Unlock my PDF</em>.</p>
+
+    <p><strong>B. Apple StoreKit</strong> (in-app purchases)</p>
+    <p>Purchases and subscriptions are managed by Apple Inc. The Developer only receives minimal transaction status data. Full payment details are handled by Apple: <a href="https://www.apple.com/legal/privacy/en/" target="_blank" rel="noopener">apple.com/legal/privacy</a></p>
+  </section>
+
+  <section class="card">
+    <h2>4. Purposes and Legal Bases</h2>
+    <ul>
+      <li><strong>Providing the app service</strong> — performance of a contract (Art. 6(1)(b) GDPR)</li>
+      <li><strong>Advertising via AdMob</strong> — consent for personalization; legitimate interest for contextual ads</li>
+      <li><strong>In-app purchases</strong> — performance of a contract (Art. 6(1)(b) GDPR)</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>5. Data Retention</h2>
+    <p>The Data Controller does not store personal data on its own servers. Data collected by Google AdMob is retained by Google according to its own policies. Data relating to Apple purchases is retained by Apple under its own terms.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. Recipients</h2>
+    <ul>
+      <li><strong>Google LLC</strong> — ad delivery (AdMob)</li>
+      <li><strong>Apple Inc.</strong> — in-app purchase management</li>
+      <li><strong>Public authorities</strong> — where required by applicable law</li>
+    </ul>
+    <p>The Data Controller does not sell or share your data for marketing purposes beyond the recipients listed above.</p>
+  </section>
+
+  <section class="card">
+    <h2>7. International Transfers</h2>
+    <p>Both Google LLC and Apple Inc. are based in the United States. Transfers are carried out in compliance with Arts. 44–49 GDPR, through Standard Contractual Clauses approved by the European Commission.</p>
+  </section>
+
+  <section class="card">
+    <h2>8. Minors</h2>
+    <p>This service is not directed to users under <strong>16 years of age</strong> (the threshold applicable in Italy under Art. 2-quinquies of Legislative Decree 196/2003). The Data Controller does not knowingly collect data from minors under 16. If you believe a minor has provided us with personal data, please contact us at <a href="mailto:giulio.palumboschiavone@gmail.com">giulio.palumboschiavone@gmail.com</a>.</p>
+  </section>
+
+  <section class="card">
+    <h2>9. Your Rights (GDPR)</h2>
+    <p>Pursuant to Arts. 15–22 GDPR, you have the right to:</p>
+    <div class="rights-grid">
+      <div class="right-item"><strong>Access</strong><span>Art. 15 GDPR</span></div>
+      <div class="right-item"><strong>Rectification</strong><span>Art. 16 GDPR</span></div>
+      <div class="right-item"><strong>Erasure</strong><span>Art. 17 GDPR</span></div>
+      <div class="right-item"><strong>Restriction</strong><span>Art. 18 GDPR</span></div>
+      <div class="right-item"><strong>Portability</strong><span>Art. 20 GDPR</span></div>
+      <div class="right-item"><strong>Objection</strong><span>Art. 21 GDPR</span></div>
+      <div class="right-item"><strong>Withdraw consent</strong><span>Art. 7(3) GDPR</span></div>
+    </div>
+    <p style="margin-top:14px">To exercise your rights: <a href="mailto:giulio.palumboschiavone@gmail.com">giulio.palumboschiavone@gmail.com</a></p>
+    <p>You also have the right to lodge a complaint with the Italian Data Protection Authority (<a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">garanteprivacy.it</a>) or the supervisory authority of your EU Member State.</p>
+  </section>
+
+  <section class="card">
+    <h2>10. Changes to This Policy</h2>
+    <p>The Data Controller reserves the right to update this policy at any time. The revision date at the top of this page indicates the latest update. Continued use of the App after changes are published constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section class="card">
+    <h2>11. Contact</h2>
+    <p>For any questions about this privacy policy or the exercise of your rights:</p>
+    <div class="highlight-box">
+      <strong>Giulio Palumbo Schiavone</strong><br>
+      <a href="mailto:giulio.palumboschiavone@gmail.com">giulio.palumboschiavone@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Giulio Palumbo Schiavone — Unlock my PDF</span>
+  <a href="../terms/">Terms of Service →</a>
+</footer>
+
+</body>
+</html>
