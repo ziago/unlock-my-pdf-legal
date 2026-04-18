@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ziago.github.io/unlock-my-pdf-legal/sitemap.xml

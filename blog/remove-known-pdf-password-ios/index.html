@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>How to Remove a Known Password from a PDF on iOS (2026)</title>
+  <meta name="description" content="When you own a password-protected PDF and already know the password, here is the safe, on-device way to remove it on iPhone and iPad. No online upload." />
+  <meta name="author" content="Giulio Palumbo Schiavone" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ziago.github.io/unlock-my-pdf-legal/blog/remove-known-pdf-password-ios/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Unlock my PDF" />
+  <meta property="og:title" content="How to Remove a Known Password from a PDF on iOS (2026)" />
+  <meta property="og:description" content="The safe, on-device way to remove a password you already know from your own PDFs." />
+  <meta property="og:url" content="https://ziago.github.io/unlock-my-pdf-legal/blog/remove-known-pdf-password-ios/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="article:published_time" content="2026-04-18" />
+  <meta property="article:author" content="Giulio Palumbo Schiavone" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Remove a Known Password from a PDF on iOS" />
+  <meta name="twitter:description" content="Safe, on-device way to remove a password you already know from your own PDFs." />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "How to Remove a Known Password from a PDF on iOS",
+        "description": "When you own a password-protected PDF and already know the password, here is the safe way to remove it on iPhone.",
+        "datePublished": "2026-04-18",
+        "dateModified": "2026-04-18",
+        "author": { "@type": "Person", "name": "Giulio Palumbo Schiavone" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Unlock my PDF",
+          "url": "https://ziago.github.io/unlock-my-pdf-legal/app/"
+        },
+        "mainEntityOfPage": "https://ziago.github.io/unlock-my-pdf-legal/blog/remove-known-pdf-password-ios/",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Blog", "item": "https://ziago.github.io/unlock-my-pdf-legal/blog/" },
+          { "@type": "ListItem", "position": 2, "name": "Remove a known password from a PDF on iOS", "item": "https://ziago.github.io/unlock-my-pdf-legal/blog/remove-known-pdf-password-ios/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site">
+  <a class="app-tag" href="../../app/">Unlock my PDF</a>
+  <h1>PDF Security Blog</h1>
+  <p class="meta">Practical guides on protecting, sharing, and managing PDFs on iPhone &amp; iPad.</p>
+
+  <nav class="doc-nav" aria-label="Primary">
+    <a href="../../privacy/">Privacy</a>
+    <a href="../../terms/">Terms</a>
+    <a href="../../support/">Support</a>
+    <a href="../../app/">App</a>
+    <a href="../" class="active" aria-current="page">Blog</a>
+  </nav>
+</header>
+
+<main>
+
+  <article class="post">
+
+    <span class="kicker">How-to · iOS</span>
+    <h1>How to remove a known password from a PDF on iOS</h1>
+    <p class="byline">By Giulio Palumbo Schiavone · Published April 18, 2026 · 6 min read</p>
+
+    <div class="tldr">
+      <strong>TL;DR —</strong> If you own a PDF and know its password, you can export an unprotected copy on iPhone in under a minute. This guide is <em>not</em> about bypassing or recovering forgotten passwords — that's neither legal nor possible with a properly encrypted file.
+    </div>
+
+    <p class="lead">
+      You received a bank statement, a payslip, or a report that's protected with a password. You know the password — maybe it's your ID number, maybe it was sent to you separately — but typing it every time you open the file is tiring. The good news: if you have permission to use the document, you can produce a clean, unprotected copy directly on your iPhone.
+    </p>
+
+    <div class="callout warning">
+      <strong>First, the honest part.</strong> This guide only covers PDFs you own or are authorized to modify. There is no ethical (or practical) way to open a PDF whose password you do not know if it's encrypted properly — the whole point of PDF encryption is that it <em>doesn't</em> allow that. Apps or websites that claim to &ldquo;recover&rdquo; or &ldquo;crack&rdquo; any PDF password are either lying, trying brute-force on weak passwords, or running a scam. Please steer clear.
+    </div>
+
+    <h2>When is it OK to remove a password?</h2>
+    <p>A few legitimate cases:</p>
+    <ul>
+      <li>A recurring document (monthly bank statement, payslip) that <em>you</em> receive and archive on <em>your</em> iPhone, and you want to open it quickly without typing the password every time.</li>
+      <li>A PDF you created yourself with a password that is no longer needed now that the recipient has received it.</li>
+      <li>A document you own that you plan to re-encrypt with a stronger password or a different one.</li>
+    </ul>
+    <p>
+      If the document belongs to someone else, respect the reason they protected it — it's a trust boundary, not just a nuisance.
+    </p>
+
+    <h2>Option 1 — Apple Books (simple, sometimes works)</h2>
+    <p>
+      If the password is an <strong>open password</strong> (only required to view the document) and you know it, you can try the Books app trick:
+    </p>
+    <ol>
+      <li>Open the PDF in <strong>Books</strong>. Type the password when asked.</li>
+      <li>Tap the share icon &rarr; <strong>Print</strong>.</li>
+      <li>In the print preview, use the pinch-out zoom on the page thumbnail, then share &rarr; <strong>Save to Files</strong>.</li>
+    </ol>
+    <p>
+      iOS &ldquo;prints&rdquo; the document back to a new PDF without the password. This works for simple view-only protection but it:
+    </p>
+    <ul>
+      <li>May degrade image quality if the document contains scans or photos</li>
+      <li>Can strip form fields, annotations, and bookmarks</li>
+      <li>Does not work with documents that have printing explicitly disabled</li>
+    </ul>
+
+    <h2>Option 2 — A dedicated PDF app (clean, keeps quality)</h2>
+    <p>
+      A proper PDF tool decrypts the file at the format level — the output is byte-for-byte equivalent to the original, just without the password. With <a href="../../app/">Unlock my PDF</a>:
+    </p>
+
+    <ol class="steps">
+      <li><strong>Open the app</strong> and pick the <em>Unlock</em> tool.</li>
+      <li><strong>Select the protected PDF</strong> from the Files app or the share sheet.</li>
+      <li><strong>Type the password you already know.</strong> The app needs it to decrypt the file — without it, decryption is mathematically impossible.</li>
+      <li><strong>Save the unprotected copy.</strong> You get a new PDF without password prompts, preserving all content, quality, and form fields.</li>
+    </ol>
+
+    <div class="callout">
+      <strong>On-device only.</strong> Serious PDF utilities never upload your file or password to a server. Before using one, check the privacy page — if the PDF needs to be sent to an online server, don't use it for anything sensitive.
+    </div>
+
+    <h2>What if I forgot the password?</h2>
+    <p>
+      Then there's no workaround, and that's by design. A well-encrypted PDF with a strong password cannot be opened without it — not by the NSA, not by a random &ldquo;PDF unlocker&rdquo; site. Your realistic options:
+    </p>
+    <ul>
+      <li><strong>Ask the sender</strong> to re-issue the document or resend the password. Banks, HR portals, and insurers can always regenerate.</li>
+      <li><strong>Check your password manager.</strong> iCloud Keychain and 1Password let you search old notes and secure entries.</li>
+      <li><strong>Check the email history</strong> — the password was often sent in a separate message.</li>
+    </ul>
+    <p>
+      Anything else (paid &ldquo;recovery&rdquo; services, shady desktop tools) either works only on trivially weak passwords via brute-force — which would take weeks on a laptop and can be illegal depending on the document — or is outright malware.
+    </p>
+
+    <div class="cta-block">
+      <h3>Unlock your own PDFs on iPhone</h3>
+      <p>Unlock my PDF removes a known password from your PDFs in seconds. Fully on-device, no uploads.</p>
+      <a class="cta" href="https://apps.apple.com/app/id6761540670?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=remove-known-pdf-password-ios" target="_blank" rel="noopener">Download on the App Store</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Is removing the password from my own PDF legal?</h3>
+    <p>
+      In most jurisdictions, yes — if you own the file or have authorization to modify it. The password is a feature of the file, not a copyright lock. For documents belonging to others (contracts, reports, publications), respect the protection.
+    </p>
+
+    <h3>Does removing the password re-compress or alter the PDF?</h3>
+    <p>
+      A proper tool that operates at the PDF format level does not recompress content. The text, images, metadata, and form fields are preserved. The &ldquo;print to PDF&rdquo; trick, on the other hand, rasterizes everything and can degrade quality.
+    </p>
+
+    <h3>What about PDFs with &ldquo;owner passwords&rdquo; that only restrict printing or editing?</h3>
+    <p>
+      Those are a different category. Most PDF tools will let you open the file normally (no password needed to view), then export a copy without the restrictions if you have a legitimate reason to edit. Again, only on files you own.
+    </p>
+
+    <h3>Can I re-protect the file with a different password afterwards?</h3>
+    <p>
+      Yes. Once the password is removed, you can re-lock with a new (stronger) password using the Lock feature. See our guide: <a href="../password-protect-pdf-iphone/">How to password-protect a PDF on iPhone</a>.
+    </p>
+
+    <hr />
+
+    <p>
+      <strong>Bottom line.</strong> Removing a password you know is a clean, legitimate operation that should take under a minute. If you're fighting with a password you never had, the answer is always &ldquo;ask the sender&rdquo; — not a sketchy online tool.
+    </p>
+
+    <aside class="related">
+      <h2>Related articles</h2>
+      <div class="related-grid">
+        <a href="../password-protect-pdf-iphone/">Password-protect a PDF on iPhone</a>
+        <a href="../send-confidential-pdf-email-safely/">Send a confidential PDF via email safely</a>
+        <a href="../pdf-encryption-explained/">PDF encryption explained: 128-bit vs 256-bit</a>
+        <a href="../best-ways-to-secure-pdf-2026/">Best ways to secure a PDF document in 2026</a>
+      </div>
+    </aside>
+
+  </article>
+
+</main>
+
+<footer>
+  <span>© 2026 Giulio Palumbo Schiavone — Unlock my PDF</span>
+  <a href="../../support/">Get help →</a>
+</footer>
+
+</body>
+</html>

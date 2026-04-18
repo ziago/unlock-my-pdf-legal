@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PDF Encryption Explained: 128-bit vs 256-bit (Plain English)</title>
+  <meta name="description" content="What &lsquo;128-bit&rsquo; and &lsquo;256-bit&rsquo; actually mean on a secure PDF. A plain-English guide to PDF encryption, AES, and what level of protection is enough." />
+  <meta name="author" content="Giulio Palumbo Schiavone" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ziago.github.io/unlock-my-pdf-legal/blog/pdf-encryption-explained/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Unlock my PDF" />
+  <meta property="og:title" content="PDF Encryption Explained: 128-bit vs 256-bit" />
+  <meta property="og:description" content="What those numbers on a &lsquo;secure&rsquo; PDF actually mean — in plain English." />
+  <meta property="og:url" content="https://ziago.github.io/unlock-my-pdf-legal/blog/pdf-encryption-explained/" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="article:published_time" content="2026-04-18" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PDF Encryption Explained: 128-bit vs 256-bit" />
+  <meta name="twitter:description" content="Plain-English guide to PDF encryption." />
+
+  <link rel="stylesheet" href="../style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "PDF Encryption Explained: 128-bit vs 256-bit",
+        "description": "A plain-English guide to PDF encryption, AES, and what level of protection is enough.",
+        "datePublished": "2026-04-18",
+        "dateModified": "2026-04-18",
+        "author": { "@type": "Person", "name": "Giulio Palumbo Schiavone" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Unlock my PDF",
+          "url": "https://ziago.github.io/unlock-my-pdf-legal/app/"
+        },
+        "mainEntityOfPage": "https://ziago.github.io/unlock-my-pdf-legal/blog/pdf-encryption-explained/",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Blog", "item": "https://ziago.github.io/unlock-my-pdf-legal/blog/" },
+          { "@type": "ListItem", "position": 2, "name": "PDF encryption explained: 128-bit vs 256-bit", "item": "https://ziago.github.io/unlock-my-pdf-legal/blog/pdf-encryption-explained/" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="site">
+  <a class="app-tag" href="../../app/">Unlock my PDF</a>
+  <h1>PDF Security Blog</h1>
+  <p class="meta">Practical guides on protecting, sharing, and managing PDFs on iPhone &amp; iPad.</p>
+
+  <nav class="doc-nav" aria-label="Primary">
+    <a href="../../privacy/">Privacy</a>
+    <a href="../../terms/">Terms</a>
+    <a href="../../support/">Support</a>
+    <a href="../../app/">App</a>
+    <a href="../" class="active" aria-current="page">Blog</a>
+  </nav>
+</header>
+
+<main>
+
+  <article class="post">
+
+    <span class="kicker">Explainer · Encryption</span>
+    <h1>PDF encryption explained: 128-bit vs 256-bit</h1>
+    <p class="byline">By Giulio Palumbo Schiavone · Published April 18, 2026 · 8 min read</p>
+
+    <div class="tldr">
+      <strong>TL;DR —</strong> PDF encryption uses AES, the same algorithm that protects everything from your iPhone's storage to your WhatsApp messages. Both <strong>AES-128</strong> and <strong>AES-256</strong> are beyond any practical brute-force attack, so the real difference is how well they'll age. Use AES-256 whenever your tool offers it. The password you pick matters far more than the bit length.
+    </div>
+
+    <p class="lead">
+      Whenever you add a password to a PDF, your app shows a number: 40-bit, 128-bit, 256-bit. Most people pick whatever's default, hit save, and move on. That's fine — but it's worth 5 minutes to understand what you're choosing, because &ldquo;secure PDF&rdquo; means surprisingly different things depending on which number you get.
+    </p>
+
+    <h2>What the numbers actually mean</h2>
+    <p>
+      The numbers refer to the length of the <em>encryption key</em>, in bits. A key is a random string used together with the cipher to scramble content. The longer the key, the more possible combinations an attacker would have to try to guess it.
+    </p>
+    <ul>
+      <li><strong>40-bit:</strong> 2⁴⁰ ≈ 1 trillion combinations. Sounds huge, but a modern computer brute-forces this in seconds.</li>
+      <li><strong>128-bit:</strong> 2¹²⁸ ≈ 3.4 × 10³⁸. Beyond any realistic brute-force attack, now or in the foreseeable future.</li>
+      <li><strong>256-bit:</strong> 2²⁵⁶ ≈ 1.15 × 10⁷⁷ — more than the number of atoms in the observable universe.</li>
+    </ul>
+    <p>
+      In other words: <strong>40-bit is broken</strong>, <strong>128-bit is safe in practice</strong>, <strong>256-bit is safe by a ridiculous margin</strong>.
+    </p>
+
+    <h2>A brief history of PDF encryption</h2>
+
+    <h3>PDF 1.3 and 1.4 — RC4 with 40-bit and 128-bit keys (1996–2003)</h3>
+    <p>
+      Early PDFs used the RC4 stream cipher. RC4 has since been shown to have significant weaknesses (key-related biases, not relevant to the PDF use case specifically, but it's a retired algorithm). The 40-bit version is trivial to break and should never be used.
+    </p>
+
+    <h3>PDF 1.6 — AES-128 (2005)</h3>
+    <p>
+      Introduced AES (the <em>Advanced Encryption Standard</em>), which is the gold-standard symmetric cipher used in VPNs, disk encryption, and secure messaging worldwide. AES-128 here means a 128-bit key under AES.
+    </p>
+
+    <h3>PDF 1.7 ExtensionLevel 3 / ISO 32000-2 — AES-256 (2008, formalized 2017)</h3>
+    <p>
+      Current state of the art. AES-256 with a proper password-strengthening function (PBKDF2 with many iterations, or equivalent). This is what any modern PDF tool defaults to.
+    </p>
+
+    <h3>What about quantum computers?</h3>
+    <p>
+      A future large-scale quantum computer would reduce AES's effective strength roughly by half (via Grover's algorithm): AES-256 would behave like a 128-bit cipher under quantum attack, AES-128 like a 64-bit one. In practical terms, AES-256 is considered quantum-resistant enough; AES-128 is probably still fine for anything you wouldn't need to keep secret for 30+ years. For most personal and business use, it doesn't change much — but it's a reason to prefer 256 where available.
+    </p>
+
+    <h2>Why the password still matters more than the cipher</h2>
+    <p>
+      Here's the uncomfortable truth: no matter how strong the encryption algorithm is, if the password is weak, the file is weak. Attackers don't actually try all 2²⁵⁶ combinations — they try common passwords first, then dictionary words, then patterns. That's called a <em>dictionary attack</em>, and it's what turns a &ldquo;256-bit encrypted&rdquo; PDF with password <em>summer2024</em> into a 10-minute exercise.
+    </p>
+
+    <blockquote>
+      AES-256 with &ldquo;password123&rdquo; is less secure than AES-128 with a 14-character random password.
+    </blockquote>
+
+    <p>
+      A good password is:
+    </p>
+    <ul>
+      <li><strong>Long.</strong> At least 14 characters, 16+ is better.</li>
+      <li><strong>Unpredictable.</strong> Not a dictionary word, not a birthday, not a name + year.</li>
+      <li><strong>Unique.</strong> Not reused from another account or document.</li>
+    </ul>
+    <p>
+      The easy way: let your password manager generate one, and store it there.
+    </p>
+
+    <h2>What about the &ldquo;owner password&rdquo;?</h2>
+    <p>
+      PDFs support two passwords:
+    </p>
+    <ul>
+      <li><strong>User password (open password):</strong> required to view the document. The content is encrypted; without this password, the file is gibberish. This is the one that provides real protection.</li>
+      <li><strong>Owner password (permissions password):</strong> required to change permissions like printing or copying. The document itself is <em>not</em> encrypted against viewing — it only tells compliant readers to hide certain options. A non-compliant reader will ignore the flags.</li>
+    </ul>
+    <p>
+      The owner password is useful but it's not &ldquo;encryption&rdquo; in the protection sense. If your goal is to keep content private, the <em>open password</em> is the one that matters.
+    </p>
+
+    <h2>How to check what encryption a PDF uses</h2>
+    <p>
+      On macOS, open the file in <strong>Preview</strong> &rarr; File &rarr; <strong>Get Info</strong> &rarr; Encryption tab. On iOS there's no built-in reader that exposes this cleanly, but a decent PDF tool will show it before or after encryption. Look for &ldquo;AES&rdquo; in the algorithm name and &ldquo;128&rdquo; or &ldquo;256&rdquo; in the key length.
+    </p>
+
+    <div class="callout warning">
+      <strong>If you ever see &ldquo;RC4&rdquo; or &ldquo;40-bit&rdquo;:</strong> the document is effectively unprotected. Re-encrypt with AES before sharing it — see <a href="../password-protect-pdf-iphone/">How to password-protect a PDF on iPhone</a>.
+    </div>
+
+    <div class="cta-block">
+      <h3>Encrypt with AES-256 on iPhone</h3>
+      <p>Unlock my PDF uses iOS's native Core Graphics encryption (AES-256 when supported by the device). Strong by default, on-device only.</p>
+      <a class="cta" href="https://apps.apple.com/app/id6761540670?utm_source=blog&amp;utm_medium=organic&amp;utm_campaign=pdf-encryption-explained" target="_blank" rel="noopener">Download on the App Store</a>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+
+    <h3>Is 256-bit twice as strong as 128-bit?</h3>
+    <p>
+      Exponentially more. Each extra bit doubles the keyspace. 256-bit is 2¹²⁸ times harder to brute-force than 128-bit — which is already beyond practical reach. In everyday terms, both are &ldquo;unbreakable by brute force&rdquo; in any realistic threat model; 256 just has much more margin.
+    </p>
+
+    <h3>Can the NSA / a state actor break AES-256?</h3>
+    <p>
+      There's no public evidence of a practical attack on properly implemented AES-256 today. The realistic threat isn't the algorithm — it's weak passwords, leaks from the endpoints (your computer, the recipient's phone), or compromised backups.
+    </p>
+
+    <h3>What about the PDF itself — does it leak metadata?</h3>
+    <p>
+      A standard PDF encrypted with an open password keeps content (text, images, form fields) encrypted, but some metadata (file size, number of pages, sometimes title and author) may still be visible depending on the encryption mode. For maximum privacy, strip metadata before encrypting.
+    </p>
+
+    <h3>If the password is so important, why not skip the encryption and just use a very long password?</h3>
+    <p>
+      A password without encryption is just a flag — anyone with the right tool ignores it. You need both: real encryption <em>and</em> a strong password.
+    </p>
+
+    <hr />
+
+    <p>
+      <strong>Bottom line.</strong> 256-bit AES is the modern default and there's no good reason to use anything weaker. But before worrying about bit lengths, fix the password first: a strong, unique, 14+ character password will protect you against every realistic attack. Everything else is margin.
+    </p>
+
+    <aside class="related">
+      <h2>Related articles</h2>
+      <div class="related-grid">
+        <a href="../password-protect-pdf-iphone/">Password-protect a PDF on iPhone</a>
+        <a href="../best-ways-to-secure-pdf-2026/">Best ways to secure a PDF document in 2026</a>
+        <a href="../send-confidential-pdf-email-safely/">Send a confidential PDF via email safely</a>
+        <a href="../remove-known-pdf-password-ios/">Remove a known password from a PDF on iOS</a>
+      </div>
+    </aside>
+
+  </article>
+
+</main>
+
+<footer>
+  <span>© 2026 Giulio Palumbo Schiavone — Unlock my PDF</span>
+  <a href="../../support/">Get help →</a>
+</footer>
+
+</body>
+</html>
