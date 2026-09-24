@@ -222,7 +222,7 @@
 <header>
   <div class="app-tag">Unlock my PDF</div>
   <h1>Privacy Policy</h1>
-  <p class="meta">Pursuant to Arts. 13–14 EU Reg. 2016/679 (GDPR) &nbsp;·&nbsp; Last updated: April 2, 2026</p>
+  <p class="meta">Pursuant to Arts. 13–14 EU Reg. 2016/679 (GDPR) &nbsp;·&nbsp; Last updated: September 25, 2026</p>
 
   <nav class="doc-nav">
     <a href="../privacy/" class="active">Privacy</a>
@@ -251,7 +251,25 @@
     <ul>
       <li>The content of the PDF files you process</li>
       <li>The passwords you enter</li>
+      <li>The signatures you draw, and the text or images you add to a PDF</li>
       <li>Any data relating to the documents you open or export</li>
+    </ul>
+
+    <p><strong>Data kept only on your device.</strong> Some features store data locally, inside the app, and never send it anywhere:</p>
+    <ul>
+      <li><strong>Library</strong> (Premium) — copies of the PDFs you process, in the app's private folder</li>
+      <li><strong>Saved passwords</strong> (Premium, optional) — in the iOS Keychain, protected by Face ID or your device passcode</li>
+      <li><strong>Signatures</strong> — up to 3 drawn signatures, in the app's private folder</li>
+      <li><strong>Daily usage counters</strong> of the free version — in the iOS Keychain</li>
+      <li><strong>Temporary working files</strong> of the tools — deleted automatically after 24 hours</li>
+    </ul>
+
+    <p><strong>Device permissions</strong> (each is requested only when you use the related feature):</p>
+    <ul>
+      <li><strong>Camera</strong> — to scan paper documents into a PDF; the images are processed on the device</li>
+      <li><strong>Photos</strong> — the app only receives the photos you pick in the system picker; permission to add to your library is requested only if you save images there</li>
+      <li><strong>Face ID</strong> — handled by iOS to unlock saved passwords; the app never receives biometric data</li>
+      <li><strong>Notifications</strong> (optional) — a reminder before the end of the free trial, scheduled locally on the device</li>
     </ul>
   </section>
 
@@ -275,6 +293,12 @@
 
     <p><strong>B. Apple StoreKit</strong> (in-app purchases)</p>
     <p>Purchases and subscriptions are managed by Apple Inc. The Developer only receives minimal transaction status data. Full payment details are handled by Apple: <a href="https://www.apple.com/legal/privacy/en/" target="_blank" rel="noopener">apple.com/legal/privacy</a></p>
+
+    <p><strong>C. Google User Messaging Platform</strong> (ad consent — free version only)</p>
+    <p>Where required (for example in the EEA, the UK and Switzerland), the app uses Google's User Messaging Platform to ask for and store your advertising consent choices. You can change them at any time in <em>Settings → Ad privacy options</em> inside the app. More info: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+
+    <p><strong>D. Date check</strong> (free version only)</p>
+    <p>To apply the daily free limits, the free version reads the current date from the response header of a simple request to apple.com (or google.com as a fallback). The request contains no file content, no password and no identifier of yours; like any internet connection, it reveals your IP address to the server contacted.</p>
   </section>
 
   <section class="card">
@@ -283,6 +307,7 @@
       <li><strong>Providing the app service</strong> — performance of a contract (Art. 6(1)(b) GDPR)</li>
       <li><strong>Advertising via AdMob</strong> — consent for personalization; legitimate interest for contextual ads</li>
       <li><strong>In-app purchases</strong> — performance of a contract (Art. 6(1)(b) GDPR)</li>
+      <li><strong>Applying the daily free limits</strong> (date check) — legitimate interest (Art. 6(1)(f) GDPR)</li>
     </ul>
   </section>
 
@@ -294,8 +319,8 @@
   <section class="card">
     <h2>6. Recipients</h2>
     <ul>
-      <li><strong>Google LLC</strong> — ad delivery (AdMob)</li>
-      <li><strong>Apple Inc.</strong> — in-app purchase management</li>
+      <li><strong>Google LLC</strong> — ad delivery (AdMob), ad consent (User Messaging Platform), date check fallback</li>
+      <li><strong>Apple Inc.</strong> — in-app purchase management, date check</li>
       <li><strong>Public authorities</strong> — where required by applicable law</li>
     </ul>
     <p>The Data Controller does not sell or share your data for marketing purposes beyond the recipients listed above.</p>
