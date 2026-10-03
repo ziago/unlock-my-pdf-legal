@@ -1,33 +1,21 @@
 # unlock-my-pdf-legal
 
-Legal pages for the **Unlock my PDF** iOS app, hosted on GitHub Pages.
+The old GitHub Pages site of **Unlock my PDF**. Since October 3, 2026 the website is
+**https://unlockmypdf.app** (repo `ziago/unlockmypdf-site`), and every page here only sends
+visitors to its new address.
 
-## Live URLs
+Keep this repo published forever: App Store versions up to 2.0.x link here (privacy policy, support,
+marketing page, and the in-app link to `/blog/`).
 
-- **Privacy Policy**: https://ziago.github.io/unlock-my-pdf-legal/privacy/
-- **Terms of Service**: https://ziago.github.io/unlock-my-pdf-legal/terms/
-- **Support** (App Store *Support URL*): https://ziago.github.io/unlock-my-pdf-legal/support/
-- **App / marketing** (App Store *Marketing URL*): https://ziago.github.io/unlock-my-pdf-legal/app/
+| Old page | New page |
+|---|---|
+| `/`, `/app/` | `/` (Italian iPhones: `/it/`) |
+| `/support/` | `/support/` (Italian iPhones: `/it/supporto/`) |
+| `/privacy/`, `/terms/` | `/privacy/`, `/terms/` |
+| `/blog/` | `/guides/` (Italian iPhones: `/it/guide/`) |
+| `/blog/remove-known-pdf-password-ios/` | `/guides/remove-password-from-pdf-iphone/` |
+| `/blog/come-mettere-password-pdf-iphone/` | `/it/guide/mettere-password-pdf-iphone/` |
+| the other 4 blog articles | `/guides/password-protect-pdf-iphone/` |
 
-Enter the **Privacy Policy** URL in **App Store Connect → App Information → Privacy Policy URL**.  
-Use **Support** and **App** URLs in the version page metadata (*Support URL*, *Marketing URL*) as needed.
-
-## Structure
-
-```
-unlock-my-pdf-legal/
-├── index.html          ← redirects to /privacy/
-├── app/
-│   └── index.html      ← short product / App Store link page (marketing URL)
-├── privacy/
-│   └── index.html      ← Privacy Policy page
-├── support/
-│   └── index.html      ← contact & FAQ (support URL)
-└── terms/
-    └── index.html      ← Terms of Service page
-```
-
-## How to update
-
-Edit any `*/index.html` as needed, then commit and push.
-GitHub Pages automatically publishes within a few minutes.
+Each page has a canonical link, an immediate JavaScript redirect, a `meta refresh` fallback and a
+visible link. `app-ads.txt` stays as it is. The old sitemap was removed.
